@@ -1,0 +1,298 @@
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /booking HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /booking HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 165[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /booking HTTP/1.1
+DEBUG main org.apache.http.headers - >> Accept: */*
+DEBUG main org.apache.http.headers - >> Content-Type: application/json
+DEBUG main org.apache.http.headers - >> Content-Length: 165
+DEBUG main org.apache.http.headers - >> Host: restful-booker.herokuapp.com
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+DEBUG main org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire -  >> "{"firstname":"Trina","lastname":"Sinha","totalprice":1500,"depositpaid":true,"bookingdates":{"checkin":"2023-2-20","checkout":"2023-2-22"},"additionalneeds":"Lunch"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Server: Cowboy[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 196[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Etag: W/"c4-jaj+DRHc7hpIvZVrKn316Ifaxao"[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Date: Sat, 25 Feb 2023 11:18:56 GMT[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Server: Cowboy
+DEBUG main org.apache.http.headers - << Connection: keep-alive
+DEBUG main org.apache.http.headers - << X-Powered-By: Express
+DEBUG main org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers - << Content-Length: 196
+DEBUG main org.apache.http.headers - << Etag: W/"c4-jaj+DRHc7hpIvZVrKn316Ifaxao"
+DEBUG main org.apache.http.headers - << Date: Sat, 25 Feb 2023 11:18:56 GMT
+DEBUG main org.apache.http.headers - << Via: 1.1 vegur
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire -  << "{"bookingid":9684,"booking":{"firstname":"Trina","lastname":"Sinha","totalprice":1500,"depositpaid":true,"bookingdates":{"checkin":"2023-02-20","checkout":"2023-02-22"},"additionalneeds":"Lunch"}}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7f8a9454
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /auth HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /auth HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 60[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /auth HTTP/1.1
+DEBUG main org.apache.http.headers - >> Accept: */*
+DEBUG main org.apache.http.headers - >> Content-Type: application/json
+DEBUG main org.apache.http.headers - >> Content-Length: 60
+DEBUG main org.apache.http.headers - >> Host: restful-booker.herokuapp.com
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+DEBUG main org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire -  >> "{[\n]"
+DEBUG main org.apache.http.wire -  >> "    "username" : "admin",[\n]"
+DEBUG main org.apache.http.wire -  >> "    "password" : "password123"[\n]"
+DEBUG main org.apache.http.wire -  >> "}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Server: Cowboy[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 27[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Etag: W/"1b-3yt28zq1OdBZYV0aHm0JpSty4Zc"[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Date: Sat, 25 Feb 2023 11:18:59 GMT[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Server: Cowboy
+DEBUG main org.apache.http.headers - << Connection: keep-alive
+DEBUG main org.apache.http.headers - << X-Powered-By: Express
+DEBUG main org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers - << Content-Length: 27
+DEBUG main org.apache.http.headers - << Etag: W/"1b-3yt28zq1OdBZYV0aHm0JpSty4Zc"
+DEBUG main org.apache.http.headers - << Date: Sat, 25 Feb 2023 11:18:59 GMT
+DEBUG main org.apache.http.headers - << Via: 1.1 vegur
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire -  << "{"token":"8f9563bc541b6df"}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1d8e9d3e
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: PUT /booking/9684 HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "PUT /booking/9684 HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: token=8f9563bc541b6df[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 165[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> PUT /booking/9684 HTTP/1.1
+DEBUG main org.apache.http.headers - >> Cookie: token=8f9563bc541b6df
+DEBUG main org.apache.http.headers - >> Accept: */*
+DEBUG main org.apache.http.headers - >> Content-Type: application/json
+DEBUG main org.apache.http.headers - >> Content-Length: 165
+DEBUG main org.apache.http.headers - >> Host: restful-booker.herokuapp.com
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+DEBUG main org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire -  >> "{"firstname":"Lucky","lastname":"Dutta","totalprice":1600,"depositpaid":true,"bookingdates":{"checkin":"2023-1-20","checkout":"2023-1-22"},"additionalneeds":"Lunch"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Server: Cowboy[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 167[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Etag: W/"a7-upf97Eas3MjS0zvXWEN7xnfGeEk"[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Date: Sat, 25 Feb 2023 11:19:00 GMT[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Server: Cowboy
+DEBUG main org.apache.http.headers - << Connection: keep-alive
+DEBUG main org.apache.http.headers - << X-Powered-By: Express
+DEBUG main org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers - << Content-Length: 167
+DEBUG main org.apache.http.headers - << Etag: W/"a7-upf97Eas3MjS0zvXWEN7xnfGeEk"
+DEBUG main org.apache.http.headers - << Date: Sat, 25 Feb 2023 11:19:00 GMT
+DEBUG main org.apache.http.headers - << Via: 1.1 vegur
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire -  << "{"firstname":"Lucky","lastname":"Dutta","totalprice":1600,"depositpaid":true,"bookingdates":{"checkin":"2023-01-20","checkout":"2023-01-22"},"additionalneeds":"Lunch"}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5d717f19
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /auth HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /auth HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 60[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /auth HTTP/1.1
+DEBUG main org.apache.http.headers - >> Accept: */*
+DEBUG main org.apache.http.headers - >> Content-Type: application/json
+DEBUG main org.apache.http.headers - >> Content-Length: 60
+DEBUG main org.apache.http.headers - >> Host: restful-booker.herokuapp.com
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+DEBUG main org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire -  >> "{[\n]"
+DEBUG main org.apache.http.wire -  >> "    "username" : "admin",[\n]"
+DEBUG main org.apache.http.wire -  >> "    "password" : "password123"[\n]"
+DEBUG main org.apache.http.wire -  >> "}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Server: Cowboy[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 27[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Etag: W/"1b-JNJUgTHjSZ7Zc3cdMWRuyyeCbvA"[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Date: Sat, 25 Feb 2023 11:19:02 GMT[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Server: Cowboy
+DEBUG main org.apache.http.headers - << Connection: keep-alive
+DEBUG main org.apache.http.headers - << X-Powered-By: Express
+DEBUG main org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers - << Content-Length: 27
+DEBUG main org.apache.http.headers - << Etag: W/"1b-JNJUgTHjSZ7Zc3cdMWRuyyeCbvA"
+DEBUG main org.apache.http.headers - << Date: Sat, 25 Feb 2023 11:19:02 GMT
+DEBUG main org.apache.http.headers - << Via: 1.1 vegur
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire -  << "{"token":"3a61b610b29273a"}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3ea75b05
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restful-booker.herokuapp.com:443
+DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:50299<->54.243.238.66:443 closed
+DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:50298<->54.243.238.66:443 closed
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /booking/9684 HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /booking/9684 HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 60[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /booking/9684 HTTP/1.1
+DEBUG main org.apache.http.headers - >> Accept: */*
+DEBUG main org.apache.http.headers - >> Content-Type: application/json
+DEBUG main org.apache.http.headers - >> Content-Length: 60
+DEBUG main org.apache.http.headers - >> Host: restful-booker.herokuapp.com
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+DEBUG main org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire -  >> "{[\n]"
+DEBUG main org.apache.http.wire -  >> "    "username" : "admin",[\n]"
+DEBUG main org.apache.http.wire -  >> "    "password" : "password123"[\n]"
+DEBUG main org.apache.http.wire -  >> "}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Server: Cowboy[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 167[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Etag: W/"a7-upf97Eas3MjS0zvXWEN7xnfGeEk"[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Date: Sat, 25 Feb 2023 11:19:03 GMT[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Server: Cowboy
+DEBUG main org.apache.http.headers - << Connection: keep-alive
+DEBUG main org.apache.http.headers - << X-Powered-By: Express
+DEBUG main org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers - << Content-Length: 167
+DEBUG main org.apache.http.headers - << Etag: W/"a7-upf97Eas3MjS0zvXWEN7xnfGeEk"
+DEBUG main org.apache.http.headers - << Date: Sat, 25 Feb 2023 11:19:03 GMT
+DEBUG main org.apache.http.headers - << Via: 1.1 vegur
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire -  << "{"firstname":"Lucky","lastname":"Dutta","totalprice":1600,"depositpaid":true,"bookingdates":{"checkin":"2023-01-20","checkout":"2023-01-22"},"additionalneeds":"Lunch"}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@45b96e4c
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main freemarker.cache - Couldn't find template in cache for "results.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results_en_IN.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "results.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/xml/results.ftl"
+DEBUG main freemarker.cache - Couldn't find template in cache for "index.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("index_en_IN.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("index.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "index.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/index.ftl"
+DEBUG main freemarker.cache - Couldn't find template in cache for "groups.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("groups_en_IN.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("groups_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("groups.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "groups.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/groups.ftl"
+DEBUG main freemarker.cache - Couldn't find template in cache for "results.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results_en_IN.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("results.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "results.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/results.ftl"
+DEBUG main freemarker.cache - Couldn't find template in cache for "class-results.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("class-results_en_IN.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("class-results_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("class-results.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "class-results.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/class-results.ftl"

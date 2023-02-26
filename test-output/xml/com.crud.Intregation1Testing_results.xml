@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.035">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testCreateBooking"
+                time="1.491"
+                classname="com.crud.Intregation1Testing">
+            </testcase>
+            <testcase
+                name="getBookinfbyid"
+                time="3.680"
+                classname="com.crud.Intregation1Testing">
+            </testcase>
+            <testcase
+                name="testCreateAndUpdateBooking"
+                time="2.864"
+                classname="com.crud.Intregation1Testing">
+            </testcase>
+</testsuite>

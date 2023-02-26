@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.468">
+    <properties></properties>
+
+
+
+            <testcase
+                name="deleteBooking"
+                time="3.047"
+                classname="com.crud.Intregation2Testing">
+            </testcase>
+            <testcase
+                name="CreateBooking"
+                time="1.462"
+                classname="com.crud.Intregation2Testing">
+            </testcase>
+            <testcase
+                name="verifyDeleteId"
+                time="2.959"
+                classname="com.crud.Intregation2Testing">
+            </testcase>
+</testsuite>
